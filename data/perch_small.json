@@ -1,0 +1,89 @@
+{
+    "objects": 
+    [
+        {"name": "desk_1", "coords": [3, -10]},
+        {"name": "chair_1", "coords": [3.5, -9]},
+        {"name": "computer_1", "coords": [3, -9]},
+        {"name": "person_1", "coords": [6, -4]},
+        {"name": "shelf_1", "coords": [6, -4.5]},
+        {"name": "knife_1", "coords": [-1.1, 2.1]},
+        {"name": "hammer_1", "coords": [5, 7]},
+        {"name": "plant_1", "coords": [-1, 2.5]},
+        {"name": "television_1", "coords": [-1.5, 17]},
+        {"name": "chair_2", "coords": [3, -10]},
+        {"name": "chair_3", "coords": [3.2, -10]},
+        {"name": "table_1", "coords": [2.9, -10]}
+    ],
+    "regions": [
+        {"name": "ground_1", "coords": [0, 0]},
+        {"name": "ground_2", "coords": [-1, 2]},
+        {"name": "ground_3", "coords": [-2.6, 3.3]},
+        {"name": "ground_4", "coords": [-2.9, 5.8]},
+        {"name": "ground_5", "coords": [-3.7, 14.3]},
+        {"name": "ground_6", "coords": [-2.7, 14.3]},
+        {"name": "ground_7", "coords": [-2.7, 15]},
+        {"name": "ground_18", "coords": [2.3, -2.8]},
+        {"name": "ground_19", "coords": [2.5, -5.9]},
+        {"name": "ground_20", "coords": [2.9, -10.4]},
+        {"name": "ground_21", "coords": [5.8, -4.3]},
+        {"name": "doorway_1", "coords": [-3.5, 27]},
+        {"name": "construction_area_1", "coords": [-4, 28]}
+    ],
+    "object_connections": [
+        ["person_1", "ground_21"],
+        ["shelf_1", "ground_21"],
+        ["desk_1", "ground_20"],
+        ["chair_1", "ground_20"],
+        ["knife_1", "ground_2"],
+        ["computer_1", "ground_20"],
+        ["plant_1", "ground_2"],
+        ["chair_2", "ground_20"],
+        ["chair_3", "ground_20"],
+        ["table_1", "ground_20"],
+        ["hammer_1", "ground_3"]
+    ],
+    "region_connections":[
+        ["ground_1", "ground_2"],
+        ["ground_2", "ground_3"],
+        ["ground_3", "ground_4"],
+        ["ground_4", "ground_5"],
+        ["ground_5", "ground_6"],
+        ["ground_1", "ground_18"],
+        ["ground_18", "ground_19"],
+        ["ground_19", "ground_20"],
+        ["ground_18", "ground_21"],
+        ["ground_21", "doorway_1"],
+        ["doorway_1", "construction_area_1"]
+    ],
+    "extra_safe_objects": [
+        {"name": "chair_4", "type":"object", "coords": [0, 0]},
+        {"name": "desk_2", "type":"object", "coords": [0, 0]},
+        {"name": "television_2", "type":"object", "coords": [0, 0]},
+        {"name": "chair_5", "type":"object", "coords": [0, 0]},
+        {"name": "book_1", "type":"object", "coords": [0, 0]}
+    ],
+    "extra_unsafe_objects": [
+        {"name": "person_2", "type":"object", "coords": [0, 0]},
+        {"name": "person_3", "type":"object", "coords": [0, 0]},
+        {"name": "knife_2", "type":"object", "coords": [0, 0]},
+        {"name": "hammer_2", "type":"object", "coords": [0, 0]},
+        {"name": "drill_1", "type":"object", "coords": [0, 0]}
+    ],
+    "extra_safe_regions": [
+        {"name": "floor_1", "type":"region", "coords": [0, 0]},
+        {"name": "floor_2", "type":"region", "coords": [0, 0]},
+        {"name": "floor_3", "type":"region", "coords": [0, 0]},
+        {"name": "ground_22", "type":"region", "coords": [0, 0]},
+        {"name": "ground_23", "type":"region", "coords": [0, 0]}
+ 
+    ],
+
+    "extra_unsafe_regions": [
+        {"name": "construction_1", "type":"region", "coords": [0, 0]},
+        {"name": "construction_2", "type":"region", "coords": [0, 0]},
+        {"name": "construction_3", "type":"region", "coords": [0, 0]},
+        {"name": "hallway_1", "type":"region", "coords": [0, 0]},
+        {"name": "exit_door__1", "type":"region", "coords": [0, 0]}
+    ],
+    "current_location": "ground_1"
+}
